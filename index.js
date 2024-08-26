@@ -16,7 +16,6 @@ app.use((req, res, next) => {
 });
 app.get("/get-data", (req, res) => {
   const boardsRef = db.collection("boards"); // Reference to the "boards" collection
-
   boardsRef
     .get()
     .then((snapshot) => {
